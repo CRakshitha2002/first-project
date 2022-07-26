@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<title>JAYA ENGINEERING COLLEGE</title>
+<link rel="stylesheet" type="text/css" href="2nd page.css"
+
+  <!-- add icon link -->
+  <link rel = "icon" href = 
+"https://image3.mouthshut.com/images/imagesp/925716863s.jpg" 
+  type = "image/x-icon">
+    
+
+  <div class="bg-div">
+    <img class="logo-img" src="https://image3.mouthshut.com/images/imagesp/925716863s.jpg" width="130" height="130" ALT="align box" ALIGN=CENTER>
+    <nav>
+      <ul>
+          <li><b>JAYA ENGINEERING COLLEGE</b></li>    
+      </ul>
+  </nav>
+  </div>
+</head>
+<br>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+
+    <a href="#" id="Home">Home</a>
+    <a href="#" id="Department">Department</a>
+    <div class="hide"></div>
+    <a href="#" id="Clubs">Clubs</a>
+    <a href="#" id="Course">UG Courses</a>
+    <a href="#" id="Courses">PG Courses</a>
+    
+  </div>
+  
+  <div style="margin-left:200px;">
+    <h1>About</h1>
+        
+          <div>Jaya Engineering College (JEC) is an ISO 9001:2000 certified institution founded in the year 1995 with a focus on technological innovation, entrepreneurship and character building to the students. The college offers 9 UG courses and 7 PG courses. JEC is Affiliated to Anna University, Chennai and approved by AICTE, New Delhi. The college management team consists of well-experienced and committed Academicians and Administrators.
+        
+        Situated close to the Chennai Metropolis, the college is one of the foremost centres of graduate and professional education in the state of Tamilnadu. The range and depth of resources at the college have few peers. Within easy reach on the same campus and other sites, the college combines all the advantages of a comprehensive institution in the Arts and Science<span id="dots">...</span><span id="more">with a full complement of professional schools. Among these are business, dentistry and an unusually complete array of paramedical professions, including pharmacy and physiotherapy.
+        
+        The undergraduate and post-graduate courses in the college offers its students the optimum setting in tertiary education specialized courses with a contingent of accessible and dedicated faculty members, within a large highly diverse college offerings nearly unlimited academic opportunities and resources. The lecture halls and laboratory areas are modern and well-equipped. The college has extensive links with IT facilities for the benefit of the students.
+        
+        The college ensures that all students have the opportunity to acquire and develop personal and transferable skills, such as technical communication and team-working skills, which are directly appropriate to their future courses.</span>
+          
+        
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      
+      <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display ="inline"
+        }
+      }
+      </script>
+
+
+
+    
+</div>
+<h1>Campus</h1>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="https://jec.ac.in/wp-content/uploads/2017/04/infrastructure12.jpg" style="width:100%">
+  <div class="text">Infrastructure</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src= "https://jec.ac.in/wp-content/uploads/2017/04/infrastructure16.jpg" style="width:100%">
+  <div class="text">CSE Block</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="https://jec.ac.in/wp-content/uploads/2017/04/infrastructure1.jpg" style="width:100%">
+  <div class="text">Main Block</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="https://jec.ac.in/wp-content/uploads/2017/04/infrastructure18.jpg" style="width:100%">
+  <div class="text">Textile Block</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="https://jec.ac.in/wp-content/uploads/2017/04/infrastructure11.jpg" style="width:100%">
+  <div class="text">cafeteria</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="https://jec.ac.in/wp-content/uploads/2017/04/infrastructure7.jpg" style="width:100%">
+  <div class="text">Library Block</div>
+  
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
